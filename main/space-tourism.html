@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="logo.svg"></div>
+        <div class="line-container">
+            <div class="line"></div>
+        </div>
+        <div class="nav">
+            <div class="links">
+                <a href="#">01 Home</a>
+                <a href="#">02 Destination</a>
+                <a href="#">03 Crew</a>
+                <a href="#">04 Technology</a>
+            </div>
+            <span class="open" style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="icon-hamburger.svg" alt=""></span>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <div class="closebtn" onclick="closeNav()"><img src="icon-close.svg" alt=""></div>
+            <a href="#">01 Home</a>
+            <a href="#">02 Destination</a>
+            <a href="#">03 Crew</a>
+            <a href="#">04 Technology</a>
+        </div>
+    </header>
+    <div class="body">
+        <div class="left-content">
+            <div class="first-pa">so, you want to travel to</div>
+            <div class="second-pa">space</div>
+            <div class="third-pa">  Let’s face it; if you want to go to space, you might as well genuinely go to 
+                outer space and not hover kind of on the edge of it. Well sit back, and relax 
+                because we’ll give you a truly out of this world experience!</div>
+        </div>
+        <div class="right-content">
+            <button>explore</button>
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+</html>
